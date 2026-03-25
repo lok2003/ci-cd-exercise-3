@@ -1,0 +1,14 @@
+name: CI/CD
+on:
+  push:
+    branches:
+      - main
+jobs:
+  exercise-2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: message
+        run: echo "Hello how are you?"
+      - name: List env
+        run: printenv
+        
