@@ -1,0 +1,13 @@
+name: CI-CD
+on:
+  push:
+    branches:
+        - main
+jobs:
+  learning:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test
+        run: echo "This is Git push Request"
+      - name: list env
+        run: printenv 
